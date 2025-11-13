@@ -1,6 +1,8 @@
-# Nature Vision - Color Vision Enhancement App
+# Ophthalmos - Color Vision Enhancement App
 
 A beautiful, nature-themed mobile-responsive web application that helps users enhance their color vision through personalized cone sensitivity testing and adaptive color rendering.
+
+**Ophthalmos** (Greek: ὀφθαλμός) means "eye" in ancient Greek, reflecting our focus on vision enhancement.
 
 ## 🌿 Features
 
