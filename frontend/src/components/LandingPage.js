@@ -17,11 +17,25 @@ function LandingPage({ userId, userName, createUser }) {
 
   const handleSubmitName = async (e) => {
     e.preventDefault();
+    console.log('Submit button clicked, name:', name);
+    
     if (name.trim()) {
-      const newUserId = await createUser(name);
-      if (newUserId) {
-        navigate('/dashboard');
+      console.log('Creating user...');
+      try {
+        const newUserId = await createUser(name);
+        console.log('User created with ID:', newUserId);
+        
+        if (newUserId) {
+          console.log('Navigating to dashboard...');
+          navigate('/dashboard');
+        } else {
+          console.error('Failed to create user - no userId returned');
+        }
+      } catch (error) {
+        console.error('Error creating user:', error);
       }
+    } else {
+      console.log('Name is empty, not submitting');
     }
   };
 
