@@ -52,8 +52,8 @@ function LandingPage({ userId, userName, createUser }) {
               <Eye size={48} className="text-white" />
             </div>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-nature-forest mb-4">
-            Nature Vision
+          <h1 className="logo-font text-4xl md:text-6xl font-bold text-nature-forest mb-4">
+            OPHTHALMOS
           </h1>
           <p className="text-xl md:text-2xl text-nature-moss font-medium">
             Your Personal Color Vision Enhancement App
