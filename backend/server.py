@@ -23,7 +23,7 @@ app.add_middleware(
 
 # MongoDB Connection
 MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017/")
-DB_NAME = os.getenv("DATABASE_NAME", "color_vision_app")
+DB_NAME = os.getenv("DATABASE_NAME", "ophthalmos")
 
 client = MongoClient(MONGO_URL)
 db = client[DB_NAME]
