@@ -1,0 +1,133 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+/* Nature-themed gradients */
+.bg-nature-gradient {
+  background: linear-gradient(135deg, #2D5016 0%, #6BA539 100%);
+}
+
+.bg-sky-gradient {
+  background: linear-gradient(180deg, #87CEEB 0%, #E0F6FF 100%);
+}
+
+.bg-earth-gradient {
+  background: linear-gradient(135deg, #8B7355 0%, #C2B280 100%);
+}
+
+/* Glass morphism effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+/* Button styles */
+.btn-nature {
+  background: linear-gradient(135deg, #4A7C23 0%, #6BA539 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-nature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(106, 165, 57, 0.4);
+}
+
+.btn-sky {
+  background: linear-gradient(135deg, #4A90A4 0%, #87CEEB 100%);
+}
+
+.btn-sky:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(74, 144, 164, 0.4);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress bar */
+.progress-bar {
+  position: relative;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4A7C23 0%, #6BA539 100%);
+  transition: width 0.3s ease;
+}
+
+/* Floating animation for icons */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+.float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* Ripple effect */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(106, 165, 57, 0.6);
+  animation: ripple 0.6s ease-out;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .glass-card {
+    margin: 1rem;
+  }
+}
+
+/* Shimmer loading effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    to right,
+    #f0f0f0 0%,
+    #e0e0e0 20%,
+    #f0f0f0 40%,
+    #f0f0f0 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
