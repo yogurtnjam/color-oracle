@@ -10,7 +10,7 @@ import uuid
 
 load_dotenv()
 
-app = FastAPI(title="Color Vision App API")
+app = FastAPI(title="Ophthalmos API")
 
 # CORS Configuration
 app.add_middleware(
