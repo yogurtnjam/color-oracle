@@ -59,7 +59,7 @@ class ColorAdaptation(BaseModel):
 # Root endpoint
 @app.get("/api/")
 async def root():
-    return {"message": "Color Vision App API", "status": "running"}
+    return {"message": "Ophthalmos API", "status": "running"}
 
 # Health check
 @app.get("/api/health")
