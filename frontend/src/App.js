@@ -37,16 +37,24 @@ function App() {
   };
 
   const createUser = async (name) => {
+    console.log('createUser called with name:', name);
+    console.log('Backend URL:', BACKEND_URL);
+    
     try {
       const response = await axios.post(`${BACKEND_URL}/api/users`, { name });
+      console.log('API response:', response.data);
+      
       const newUserId = response.data.userId;
       setUserId(newUserId);
       setUserName(name);
       localStorage.setItem('userId', newUserId);
       localStorage.setItem('userName', name);
+      
+      console.log('User created successfully, userId:', newUserId);
       return newUserId;
     } catch (error) {
       console.error('Error creating user:', error);
+      console.error('Error details:', error.response?.data || error.message);
       return null;
     }
   };
