@@ -1,6 +1,12 @@
 /* App.css */
 .App {
   text-align: center;
+  font-family: 'Funnel Display', sans-serif;
+}
+
+.logo-font {
+  font-family: 'Lexend Zetta', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 /* Nature-themed gradients */
